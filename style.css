@@ -1,0 +1,30 @@
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #1c1228;
+    color: #f4bf75;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-size: 1.2em;
+}
+
+a {
+    color: #f4bf75;
+    text-decoration: dotted underline;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
