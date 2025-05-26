@@ -3,18 +3,13 @@ body {
     background-color: #1c1228;
     color: #f4bf75;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.6;
 }
 
-p {
+p, a {
     padding: 0px;
     margin: 0px;
     border: 0px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 a {
@@ -27,4 +22,12 @@ main {
     max-width: 1000px;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.layout-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;   
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
