@@ -6,7 +6,9 @@ body {
     padding: 10px 50px 0 50px;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -14,13 +16,57 @@ header, main, footer {
     box-sizing: border-box;
 }
 
-#directories-overview {
+#files-overview {
     display: flex;
     flex-direction: row;
     gap: 5%;
 }
 
-p, a {
+h1,
+h2,
+h3 {
+    color: #f4bf75;
+    font-family: 'Fira Code', monospace;
+
+}
+
+h1:hover,
+h2:hover,
+h3:hover {
+    animation: lightbulb-flicker 1s steps(5, end) forwards;
+}
+
+@keyframes lightbulb-flicker {
+    0% {
+        text-shadow: none;
+    }
+
+    10% {
+        text-shadow: 0 0 5px #f4bf75;
+    }
+
+    20% {
+        text-shadow: none;
+    }
+
+    30% {
+        text-shadow: 0 0 10px #f4bf75;
+    }
+
+    40% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0 0 15px #f4bf75;
+    }
+
+    100% {
+        text-shadow: 0 0 15px #f4bf75;
+    }
+}
+
+p,
+a {
     padding: 0px;
     margin: 0px;
     font-size: 1em;
@@ -35,14 +81,16 @@ a {
     color: #f4bf75;
     padding-top: 10px;
 }
+
 .place-cursor::after {
-  content: "|";
-  animation: blink 1s step-end infinite;
+    content: "|";
+    animation: blink 1s step-end infinite;
 }
+
 @keyframes blink {
-  50% {
-    opacity: 0;
-  }
+    50% {
+        opacity: 0;
+    }
 }
 
 .pink {
