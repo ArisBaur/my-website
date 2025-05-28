@@ -2,30 +2,113 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>baur.icu</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="static/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>baur.icu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-  <header class="layout-container">
-    <p class="prompt">[evee@fedora:~]</p>
-    <p class="prompt">> ls</p>
-    <div id="directories-overview">
-      <a href="/index.html">home</a>
-      <a href="/about.html">about</a>
-      <a href="/blog.html">blog</a>
-    </div>
-  </header>
-  <main class="layout-container">
-<h1>Welcome!</h1>
-  <p>
-    This is the personal website of Evandra Baur, a student and aspiring aerospace engineer.
-    Here you can find information about my background, experience, and interests.
-  </main>
-  
+    <header>
+        <div class="prompt">
+            <p>[evee@fedora:~]</p>
+            <p><span class="pink">></span> ls</p>
+        </div>
+        <div id="directories-overview">
+            <a href="/index.html">home</a>
+            <a href="/about.html">about</a>
+            <a href="/blog.html">blog</a>
+        </div>
+        <div class="prompt">
+            <p>[evee@fedora:~]</p>
+            <p><span class="pink">></span> cat welcome.md</p>
+        </div>
+        <div class="prompt">
+            <p>[evee@fedora:~]</p>
+            <p><span class="pink">></span> cat home.md</p>
+        </div>
+    </header>
+
+    <main>
+        <h1>#whoami</h1>
+        <p>
+            My name is Evandra (Leandria) Baur and I'm a wanna-be soon-to-be
+            aerospace engineer. It'll take a while 'till I get there, but as you
+            can see just as this website, I too will grow.
+        </p>
+
+        <h1>#experience</h1>
+        <ul>
+            <li>
+                <a href="https://www.baur.eu/en/home">Baur - Ensuring the Flow</a>
+                - Intern over the summer, 3 years in a row, 2023-2025
+            </li>
+            <li>
+                <a href="https://www.oeamtc.at/">Fries Verpackungen</a> - summer job 08/08 - 03/09
+            </li>
+        </ul>
+
+        <h1>#education</h1>
+        <ul>
+            <li>seit 09/21: Ausbildung HTL, Wirtschaftsinformatik</li>
+            <li>07/17 - 09/21: Mittelschule Sulz/Röthis</li>
+            <li>07/13 - 09/17: Volksschule Rankweil Markt</li>
+        </ul>
+
+
+        <h1>#skills</h1>
+        <ul>
+            <li>Basics of Microsoft Office</li>
+            <li>Basics of HTML, CSS, JavaScript</li>
+            <li>Basics of Python</li>
+            <li>Intermediate in C/C++</li>
+            <li>Linux Superuser</li>
+            <li>Electrical Engineering</li>
+            <li>Working with Embedded Systems</li>
+        </ul>
+
+        <h1>#projects</h1>
+
+        <p>Projects I have documented:</p>
+        <ul>
+            <li>
+                <a href="https://youtu.be/zfVP24YL4eg?si=vnlVXwroCNGbEtuS">my first ESP32 Project</a>
+            </li>
+            <li>
+                <a href="https://youtu.be/s1iLg3M2R88?si=S8r-aZ5fKmFtEOnv">MicroSnae - an ESP32 Project</a>
+            </li>
+            <li>
+                <a href="https://github.com/ArisBaur/the-ol-switcheroo">My own game - made for school</a>
+            </li>
+        </ul>
+        <p>Projects yet to document:</p>
+        <ul>
+            <li>My first website (this one)</li>
+            <li>ESP32 PC Remote</li>
+        </ul>
+
+        <h1>#hobbies</h1>
+        <p>
+            My hobbies include programming, tinkering with electronics, and going outside.
+            Im a big nature person and love spending my time in forests, going for walks or picnicking.
+            Additionally I was always a very active person and this continues on.
+            So combined with my interest in nature I often go running to clear my head and relax.
+            Afterwards a yoga session often follows.
+        </p>
+
+        <h1>#contact</h1>
+        <p>Email: <a href="mailto:evandra.leandria@baur.icu">evandra.leandria@baur.icu</a></p>
+        <p>GitHub: <a href="https://github.com/ArisBaur">https://github.com/ArisBaur</a></p>
+
+    </main>
+
+
+    <footer>
+        <p class="prompt">[evee@fedora:~]</p>
+        <p class="prompt-active">></p>
+    </footer>
+
 </body>
 
 </html>
