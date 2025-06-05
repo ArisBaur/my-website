@@ -85,6 +85,8 @@ a {
 .place-cursor::after {
     content: "|";
     animation: blink 1s step-end infinite;
+    color: #f26392;
+    margin-left: 2px;
 }
 
 @keyframes blink {
@@ -93,6 +95,18 @@ a {
     }
 }
 
-.pink {
-    color: #f26392;
+#ghost-input {
+  opacity: 1;
+  background-color: transparent;
+  border: none;
+  color: #efd2b1;
+  position: relative;
+  right: 7px;
+
+    outline: none;           /* 🔥 kills the focus ring */
+  box-shadow: none;        /* 🔥 kills any inset shadows */
+  caret-color: #efd2b1;    /* 🧠 optional: control caret color */
+  caret-shape: bar;;
+  font-family: 'Fira Code', monospace;
+  font-size: 1em;
 }
