@@ -16,9 +16,10 @@
             <p><span class="pink">></span> ls</p>
         </div>
         <div id="files-overview">
-            <a href="index.html">home</a>
             <a href="about.html">about</a>
+            <a href="index.html">home</a>
             <a href="blog.html">blog</a>
+            <a href="tutoring.html">tutoring</a>
         </div>
         <div class="prompt">
             <p>[evee@fedora:~]</p>
@@ -100,31 +101,14 @@
     </main>
 
 
+
     <footer>
-        <div class="prompt">
+        <div class="prompt" id="prompt-input">
             <p class="prompt">[evee@fedora:~]</p>
-            <p id="terminal-output">
-                <span class="place-cursor">></span>
-                <input id="ghost-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-            </p>
+            <p class="prompt"><span class="pink">></span> echo "Thanks for visiting my website!"</p>
+
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const ghostInput = document.getElementById('ghost-input');
-            const terminalOutput = document.getElementById('terminal-output');
-
-            ghostInput.focus();
-
-            document.addEventListener('click', () => ghostInput.focus());
-
-            ghostInput.addEventListener('input', () => {
-                terminalOutput.textContent = ghostInput.value;
-            });
-        });
-
-    </script>
 
 </body>
 

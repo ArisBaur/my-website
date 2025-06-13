@@ -56,6 +56,7 @@ h3:hover {
     40% {
         text-shadow: none;
     }
+
     50% {
         text-shadow: 0 0 15px #f4bf75;
     }
@@ -85,8 +86,6 @@ a {
 .place-cursor::after {
     content: "|";
     animation: blink 1s step-end infinite;
-    color: #f26392;
-    margin-left: 2px;
 }
 
 @keyframes blink {
@@ -95,18 +94,6 @@ a {
     }
 }
 
-#ghost-input {
-  opacity: 1;
-  background-color: transparent;
-  border: none;
-  color: #efd2b1;
-  position: relative;
-  right: 7px;
-
-    outline: none;           /* 🔥 kills the focus ring */
-  box-shadow: none;        /* 🔥 kills any inset shadows */
-  caret-color: #efd2b1;    /* 🧠 optional: control caret color */
-  caret-shape: bar;;
-  font-family: 'Fira Code', monospace;
-  font-size: 1em;
+.pink {
+    color: #f26392;
 }
